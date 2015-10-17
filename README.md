@@ -4,8 +4,8 @@ Simple application using Django & Angular.
 
  - Using JWT for client authentication
  - Django REST framework for api
- - browserify & less for the UI
- - Grunt for build tool
+ - Twitter Bootstrap & less for UI
+ - browserify & Grunt as a build tool
 
 ### Run & Install
 
