@@ -1,0 +1,24 @@
+<form name="loginForm" class="form form-login"
+  ng-submit="submitForm(loginForm.$valid)" novalidate
+>
+  <h2>Login</h2>
+  <hr>
+  <div form-error message="formErrorMessage"></div>
+  <label for="username" class="sr-only">Username</label>
+  <input
+    type="text" id="username" name="username"
+    class="form-control" placeholder="Username"
+    ng-model="form.username" required autofocus
+  >
+  <label for="password" class="sr-only">Password</label>
+  <input
+    type="password" id="password" name="password"
+    class="form-control" placeholder="Password"
+    ng-model="form.password" required
+  >
+  <hr>
+  <button type="submit" class="btn btn-lg btn-primary"
+    ng-disabled="loginForm.$invalid"
+  >Submit</button>
+  <a ui-sref="register">Register</a>
+</form>

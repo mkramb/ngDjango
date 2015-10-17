@@ -1,0 +1,21 @@
+@base-spacing: 10px;
+@base-font-size: 16px;
+
+@import 'icons.less';
+@import 'form.less';
+
+[ng\:cloak], [ng-cloak] {
+  display: none !important;
+}
+
+body {
+  > .container {
+    margin-top: @base-spacing * 4;
+  }
+}
+
+.page-header {
+  a {
+    font-size: @base-font-size;
+  }
+}

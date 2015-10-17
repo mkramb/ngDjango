@@ -1,0 +1,37 @@
+@form-button: 120px;
+@form-register-width: 630px;
+@form-login-width: 430px;
+
+.form {
+  margin: 0 auto;
+  margin-top: @base-spacing * 4;
+  padding: @base-spacing * 2;
+
+  &.form-register {
+    max-width: @form-register-width;
+  }
+
+  &.form-login {
+    max-width: @form-login-width;
+  }
+
+  .form-control {
+    padding: @base-spacing;
+    font-size: @base-font-size;
+  }
+
+  input {
+    margin-bottom: @base-spacing;
+    height: auto;
+  }
+
+  button {
+    width: @form-button;
+    display: inline;
+  }
+
+  a {
+    display: inline;
+    margin-left: @base-spacing;
+  }
+}

@@ -1,0 +1,8 @@
+client/lib/
+server/static/
+node_modules/
+.DS_Store
+db.sqlite3
+.project
+.pydevproject
+*.pyc

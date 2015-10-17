@@ -1,0 +1,16 @@
+{
+  "name": "ngDjango",
+  "ignore": [
+    "**/.*",
+    "lib"
+  ],
+  "dependencies": {
+    "a0-angular-storage": "~0.0.12",
+    "angular": "~1.4.6",
+    "angular-jwt": "~0.0.9",
+    "angular-resource": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.5",
+    "lodash": "~3.10.1"
+  }
+}

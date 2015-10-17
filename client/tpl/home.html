@@ -1,0 +1,15 @@
+<div class="page-header">
+  <h2>List of all users
+    <div class="btn-group btn-group-sm pull-right">
+      <a ui-sref="logout">Logout</a>
+    </div>
+  </h2>
+</div>
+<ul class="list-group">
+  <li ng-repeat="user in users" class="list-group-item">
+    {{ user.username }}
+  </li>
+  <div ng-if="!users.length" class="alert alert-info" role="alert">
+    No other users available in the system.
+  </div>
+</ul>

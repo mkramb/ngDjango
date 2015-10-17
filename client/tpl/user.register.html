@@ -1,0 +1,33 @@
+<form name="registerForm" class="form form-register"
+  ng-submit="submitForm(registerForm.$valid)" novalidate
+>
+  <h2>Register</h2>
+  <hr>
+  <div form-error message="formErrorMessage"></div>
+  <label for="username" class="sr-only">Username</label>
+  <input type="text" id="username" name="username"
+    class="form-control" placeholder="Username"
+    ng-model="form.username" required autofocus
+  >
+  <label for="password" class="sr-only">Password</label>
+  <input type="password" id="password" name="password"
+    class="form-control" placeholder="Password"
+    ng-model="form.password" required
+  >
+  <hr>
+  <label for="firstName" class="sr-only">FirstName</label>
+  <input type="text" id="firstName" name="firstName"
+    class="form-control" placeholder="First Name"
+    ng-model="form.first_name" required
+  >
+  <label for="lastName" class="sr-only">Lastname</label>
+  <input type="text" id="lastName" name="lastName"
+    class="form-control" placeholder="Last Name"
+    ng-model="form.last_name" required
+  >
+  <hr>
+  <button type="submit" class="btn btn-lg btn-primary"
+    ng-disabled="registerForm.$invalid"
+  >Submit</button>
+  <a ui-sref="login">Login</a>
+</form>
